@@ -3,8 +3,8 @@ package com.sandbox.scheduler.model;
 
 public enum Category {
 	RED(1),
-	GREEN(2),
-	BLUE(3);
+	GREEN(3),
+	BLUE(2);
 	
 	private int value;
 	
