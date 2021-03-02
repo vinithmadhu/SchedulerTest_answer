@@ -9,6 +9,11 @@ import java.time.ZoneOffset;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Application that sorts and prints task based on Uregency and then by Category
+ * and then by Oldest entry first
+ */
+
 public class App {
 
 	public static void main(String[] args) {
@@ -21,11 +26,11 @@ public class App {
 
 		List<Task> unsorted = Arrays.asList(task1, task2, task3, task4, task5, task6);
 
-		// Uncoment your line after implementing Scheduler.scheduleTask
-		// unsorted.forEach(t -> Scheduler.scheduleTask(t));
+		// Sort first based on Uregency and then by Category and then by Oldest entry
+		// first
 		List<Task> sorted = Scheduler.scheduleTask(unsorted);
 
-		// Uncoment your line after implementing Scheduler.printSchedule()
+		// print each task after sorting with new line
 		Scheduler.printSchedule(sorted);
 	}
 

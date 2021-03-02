@@ -2,6 +2,10 @@ package com.sandbox.scheduler.model;
 
 import java.time.LocalDateTime;
 
+/**
+ * Getter setter for TASK
+ */
+
 public class Task {
 
 	public int urgency = -1;
